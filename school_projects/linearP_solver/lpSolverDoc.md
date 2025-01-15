@@ -1,0 +1,6 @@
+### Update functions:
+  **def upd_pvt_lbl_coef_li**(pvt_info_tpl, pvt_label_li, pvt_coef_li, num_opt_vars, lv_var_row, aux_var_col, num_rows, use_aux)
+    A) Does:
+        1)...
+    B) Changes:
+        1)...

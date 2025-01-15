@@ -1,0 +1,10 @@
+## Getting Started
+1. This folder runs the Shortest path and Cheapest Path algorithms. However, the interface requires Depth First Search and Breadth First Search and so these algorithms are simply implemented but cannot be used. The implementation of Breadth First Search was provided, however, Depth First left as an exercise and so I implemented it myself. See the File DirectedGraph.java in the GraphPackage directory.
+2. To run the algorithm run the GraphTests.java file in the test directory. If on vscode, press the play button in the top left corner while in the fiel GraphTests.java.
+3. The file **inputFile.txt** is used to run the algorithms, you can use a different file so long as it has the same structure as the one in inputFile.txt. The input file must be in the `more_graphs` directory.
+
+### NOTES:
+1. The purpose of this directory is to demonstrate the ability to work with multiple libraries from multiple sources. The sources used to implement the algorithms are the (Java.util) library and code snippets from multiple chapters in the book "Data Structures and Abstraction with Java" by Frank Carrano and Timothy Henry. 
+2. With exception to the (DirectedGraph.java) file in (GraphPackage), the other files are code snippets from this book. In some cases like, LinkedListWithIterator.java, I had to combine code snippets from different chapters to be able to implement the final algorithms in the DirectedGraph.java file. This involved understanding how these code snippets(functions) work to be able to achieve the final goal.
+3. In some cases, in the interest of time, using the data structures in the java.util library instead of the book made more sense.
+4. I wrote all the Code in the `test` directory. I wrote the code for `Cheapest path`. Cheapest path was simply described. The implementation for `Shortest path` slightly differs from the one provided in the book as I opted to use java.util library instead of the code snippets from the book.

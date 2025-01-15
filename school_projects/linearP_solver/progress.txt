@@ -1,0 +1,5 @@
+Lecture 7 converting the auxiliary problem back to the original lp
+    1.1. Done
+2. Can now solve example in lecture 7 slide 48.
+
+3. See the ReadMe file.
