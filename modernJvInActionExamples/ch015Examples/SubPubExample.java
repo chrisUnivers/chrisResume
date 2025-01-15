@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Flow.Publisher;
 import java.util.concurrent.Flow.Subscriber;
+import java.util.concurrent.Flow.Subscription;
 
 public class SubPubExample {
     
@@ -31,6 +32,7 @@ public class SubPubExample {
             subscribers.forEach(subscriber -> subscriber.onNext(this.value));
         }
 
+        
         @Override
         public void onNext(Integer newValue)
         {
@@ -38,6 +40,18 @@ public class SubPubExample {
             System.out.println(this.name + ":" + this.value);
             notifyAllSubscribers();
         }
+
+        @Override
+        public void onComplete() {}
+
+        @Override
+        public void onError(Throwable t)
+        {
+            t.printStackTrace();
+        }
+
+        @Override
+        public void onSubscribe(Subscription s) {}
     }
 
     private class ArithmeticCell extends SimpleCell {
