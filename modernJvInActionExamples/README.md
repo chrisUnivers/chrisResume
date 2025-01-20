@@ -1,0 +1,2 @@
+## Notes
+  * The code in this directory was written for note taking purposes. As such it some file might contain zero or more compile time errors. note some files do not contain any errors. For example directory `mainRep` and SubPubExample in `ch015Examples`

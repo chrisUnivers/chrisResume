@@ -1,0 +1,3 @@
+## Notes
+  * With exception to the SubPubExample file, 
+  * the code in the directory was solely used when reading the book Modern Java In Action. Mainly to track improvements in implementation methods. As such it contains compiler errors since it was only writen for learning purposes.

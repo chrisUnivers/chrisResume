@@ -1,8 +1,8 @@
-package modernJavaInActionExs.mainRep;
+package mainRep;
+
+import java.util.concurrent.ForkJoinPool;
 
 // package modernjavainaction.chap07;
-
-import static modernjavainaction.chap07.ParallelStreamsHarness.FORK_JOIN_POOL;
 
 import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;
@@ -11,6 +11,7 @@ import java.util.stream.LongStream;
 public class ForkJoinSumCalculator extends RecursiveTask<Long> {
 
   public static final long THRESHOLD = 10_000;
+  public static final ForkJoinPool FORK_JOIN_POOL = new ForkJoinPool();
 
   private final long[] numbers;
   private final int start;
