@@ -1,8 +1,9 @@
 node_modules/
+.observablehq/cache/
 .gradle/
 build/
 bin/
-.observablehq/cache/
+public/
 
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
@@ -11,6 +12,7 @@ dist/
 /tmp
 /out-tsc
 /bazel-out
+
 
 # Node
 npm-debug.log
