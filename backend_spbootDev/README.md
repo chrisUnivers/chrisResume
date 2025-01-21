@@ -32,6 +32,8 @@
    * Use command below if using gradle. This is a gradle project so maven will not work. The commands to three three app in are:
      + ./gradlew cashcard-transaction-source:bootRun
      + ./gradlew cashcard-transaction-enricher:bootRun --args="--spring.cloud.stream.bindings.enrichTransaction-in-0.destination=approvalRequest-out-0"
-     + ./gradlew cashcard-transaction-sink:bootRun --args="--spring.cloud.stream.bindings.sinkToConsole-in-0.destination=enrichTransaction-out-0"
+     + ./gradlew cashcard-transaction-sink:bootRun --args="--spring.cloud.function.definition=sinkToConsole;cashCardTransactionFileSink --spring.cloud.stream.bindings.cashCardTransactionFileSink-in-0.destination=enrichTransaction-out-0 --spring.cloud.stream.bindings.sinkToConsole-in-0.destination=enrichTransaction-out-0"
   * Use the command below to run the tests.
-    + ./gradlew test
+    + ./gradlew cashcard-transaction-source:test
+    + ./gradlew cashcard-transaction-enricher:test
+    + ./gradlew cashcard-transaction-sink:test
