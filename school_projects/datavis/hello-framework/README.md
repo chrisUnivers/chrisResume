@@ -4,7 +4,7 @@
 ## Notes:
   * This is a school project I worked on with another student. Although I can't prove it, I wrote all the code.
   * You will need to install the observable framework.
-  * After running to "npm run dev" navigate to the `CSC 411 Final Project` tab. The other tabs are examples.
+  * After running to "npm run dev" navigate to the `CSC 411 Final Project` tab. The other tabs are examples. 
 This is an [Observable Framework](https://observablehq.com/framework) project. To start the local preview server, run:
 
 ```
