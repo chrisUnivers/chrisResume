@@ -26,7 +26,11 @@
   * Testing was also covered and the Spring cloud stream test bind was used for this. 
 
 ## End to End Integration Module(e2e-tests)
-  * Although the end to end integration module(e2e-tests) is include, I don't hava a general understanding of it like the other three: source, processor, sink.
+  * Instead of running unit test on each application individually, int the end-to-end-test(e2e) the system is tests as one single unit. 
+    + A Kafka broker is used instead of using the test binder from Spring Cloud Stream.
+  * Used the TestContainers method, instead of using the Kafka broker, to test the whole application. Kafka is still used, as the middleware, for the TestContainer tests.
+    + The corresponding file is `CashCardTransactionStreamE2EContainerTests.java`.
+    + The same test is used.
 
   ## How to run:
    * Use command below if using gradle. This is a gradle project so maven will not work. The commands to three three app in are:
@@ -37,3 +41,5 @@
     + ./gradlew cashcard-transaction-source:test
     + ./gradlew cashcard-transaction-enricher:test
     + ./gradlew cashcard-transaction-sink:test
+  * Command for the e2e test below:
+    + ./gradlew cashcard-transaction-e2e-tests:test  
