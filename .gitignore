@@ -64,4 +64,5 @@ lerna-debug.log*
 
 dist-ssr
 *.local
+# Config file
 config.env
