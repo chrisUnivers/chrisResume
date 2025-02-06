@@ -12,9 +12,6 @@
   * npm run dev
     + in a different terminal in the cliend folde
 
-## Features
-  + For now no svg icon for funding progress(good, pending, rejected)
-
 ## Issues if following old guides
   * npx problems. See comment on npx cli
     + https://stackoverflow.com/questions/79380514/problem-installing-tailwindcss-with-vite-after-npx-tailwindcss-init-p-comman/79380522#79380522

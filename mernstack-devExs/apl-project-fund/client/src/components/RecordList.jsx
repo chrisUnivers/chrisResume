@@ -7,10 +7,10 @@ const Record = (props) => (
       {props.record.name}
     </td>
     <td className="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
-      {props.record.position}
+      {props.record.department}
     </td>
     <td className="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
-      {props.record.level}
+      {props.record.status}
     </td>
     <td className="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
       <div className="flex gap-2">
@@ -79,20 +79,20 @@ export default function RecordList() {
   // This following section will display the table with the records of individuals.
   return (
     <>
-      <h3 className="text-lg font-semibold p-4">Employee Records</h3>
+      <h3 className="text-lg font-semibold p-4 pl-2">Project Records</h3>
       <div className="border rounded-lg overflow-hidden">
         <div className="relative w-full overflow-auto">
           <table className="w-full caption-bottom text-sm">
             <thead className="[&amp;_tr]:border-b">
               <tr className="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
                 <th className="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
-                  Name
+                  Project Name
                 </th>
                 <th className="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
-                  Position
+                  Department
                 </th>
                 <th className="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
-                  Level
+                  Status
                 </th>
                 <th className="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
                   Action
@@ -105,35 +105,6 @@ export default function RecordList() {
           </table>
         </div>
       </div>
-      <div class="pt-3">
-        <ul class="space-y-3">
-          <li class="flex items-center">
-              <div class="mt-10.0 flex min-w-xs items-start gap-x-1 rounded-xl bg-white p-6 shadow-none outline outline-gray-800 dark:bg-none dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-                <div>
-                  <div class="flex items-center text-lg font-medium text-black dark:text-white">
-                    <p class="mr-3">ChitChat</p>
-                    <a href="#" class=""></a>
-                    <svg class="size-5.5 shrink-0" fill="none" stroke-linecap="square">
-                      <circle cx="11" cy="11" r="11" class="fill-sky-400/25" />
-                      <circle cx="11" cy="11" r="10.5" class="stroke-sky-400/25" />
-                      <path d="M8 11.5L10.5 14L14 8" class="stroke-sky-800 dark:stroke-sky-300" />
-                    </svg>
-                  </div>
-                  <p class="text-gray-500 dark:text-gray-400">You have a new message!</p>
-                  <p class="text-gray-500 dark:text-gray-400">You have a new message!</p>
-                </div>
-              </div>
-          </li>
-          <li class="flex items-center text-lg font-medium text-black 
-            dark:text-white">
-            <a href="https://tailwindcss.com/" class="flex min-w-xs rounded-xl bg-white p-6 shadow-none outline outline-black dark:bg-none dark:shadow-none dark:-outline-offset-1 dark:outline-white/10 ">
-              <p>Clickable div</p>
-            </a>
-          </li>
-        </ul>
-        
-      </div>
-      
     </>
   );
 }
